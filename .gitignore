@@ -1,0 +1,6 @@
+*.ipynb
+*.pyc
+*.zip
+
+.ipynb_checkpoints/*
+notebooks/.ipynb_checkpoints/*
