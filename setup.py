@@ -8,7 +8,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name='more-transformers',
-    version='0.0.3',
+    version='0.0.5',
     description='More transformers for scikit-learn pipelines',  # Optional
     long_description=long_description,
     long_description_content_type='text/markdown',
@@ -30,7 +30,8 @@ setup(
     package_dir={'': 'mtransformers'},
     packages=find_packages(where='mtransformers'),
     python_requires='>=3.6',
-
+    packages: ['mtransformers']
+    
     install_requires=[
         'numpy',
         'pandas',
