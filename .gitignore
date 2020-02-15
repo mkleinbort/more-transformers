@@ -1,6 +1,9 @@
 *.ipynb
 *.pyc
 *.zip
-
-.ipynb_checkpoints/*
-notebooks/.ipynb_checkpoints/*
+*.tar.gz
+more_transformers/more_transformers.egg*
+more_transformers/.ipynb_checkpoints/*
+more_transformers.egg*
+*.ipynb_checkpoints/*
+dist/*

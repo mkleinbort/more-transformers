@@ -30,7 +30,16 @@ class ColumnSelector(BaseEstimator, TransformerMixin):
             - If callable then columns are selected as per 
             
                 X.loc[:, columns]
+                
+        Note:
+        -----
+        I prefer "numeric" to "number", so this class has an exception where 
+        ColumnSelector('numeric') will select columns as per X.select_dtypes('number')
         '''
+        
+        if columns is 'numeric':
+            columns = 'number'
+            
         self.columns = columns
         
     def fit(self, X, y=None):
